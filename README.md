@@ -1,1 +1,0 @@
-# MAGRITTE_MINAR
