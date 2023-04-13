@@ -14,9 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
         scene.add(light);
 
         const gltf = await loadGLTF('./assets/applications/assets/models/statue/scene.gltf');
-        gltf.scene.scale.set(0.4, 0.4, 0.4);
+        gltf.scene.scale.set(0.2, 0.2, 0.2);
        // gltf.scene.scale.set(0.4, 0.4, 0.4);
-        gltf.scene.position.set(1, 0, 0);
+        gltf.scene.position.set(0, 0, 0);
 
         const anchor = mindarThree.addAnchor(0);
         anchor.group.add(gltf.scene);
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         await mindarThree.start();
         renderer.setAnimationLoop(() => {
             const delta = clock.getDelta();
-            gltf.scene.rotation.set(0, gltf.scene.rotation.y + delta, 0);
+            gltf.scene.rotation.set(90, gltf.scene.rotation.y + delta, 0);
             mixer.update(delta);
             renderer.render(scene, camera);
         });
