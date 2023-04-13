@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         scene.add(light);
 
         const gltf = await loadGLTF('./assets/applications/assets/models/statue/scene.gltf');
-        gltf.scene.scale.set(1, 1, 1);
+        gltf.scene.scale.set(0.4, 0.4, 0.4);
        // gltf.scene.scale.set(0.4, 0.4, 0.4);
         gltf.scene.position.set(0, -0.4, 0);
 
