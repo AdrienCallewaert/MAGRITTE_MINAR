@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const gltf = await loadGLTF('./assets/applications/assets/models/statue/scene.gltf');
         gltf.scene.scale.set(0.4, 0.4, 0.4);
        // gltf.scene.scale.set(0.4, 0.4, 0.4);
-        gltf.scene.position.set(0, -0.4, 0);
+        gltf.scene.position.set(90, -0.4, 0);
 
         const anchor = mindarThree.addAnchor(0);
         anchor.group.add(gltf.scene);
