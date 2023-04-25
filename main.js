@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
        // const gltf = await loadGLTF('./assets/applications/assets/models/melon/scene.gltf');
 
-        const gltf = await loadGLTF('./assets/applications/assets/models/statue/scene.gltf');
+        const gltf = await loadGLTF('./assets/applications/assets/models/melon/scene.gltf');
         gltf.scene.scale.set(0.2, 0.2, 0.2);
        // gltf.scene.scale.set(0.4, 0.4, 0.4);
         gltf.scene.position.set(0, 0, 0);
