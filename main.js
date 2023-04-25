@@ -23,9 +23,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const anchor = mindarThree.addAnchor(0);
         anchor.group.add(gltf.scene);
 
-        const mixer = new THREE.AnimationMixer(gltf.scene);
+        // const mixer = new THREE.AnimationMixer(gltf.scene);
         // const action = mixer.clipAction(gltf.animations[0]);
-        action.play();
+        // action.play();
 
         const clock = new THREE.Clock();
 
