@@ -13,7 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const light = new THREE.HemisphereLight(0xffffff, 0xbbbbff, 1);
         scene.add(light);
 
-        const gltf = await loadGLTF('./assets/applications/assets/models/statue/scene.gltf');
+                                // ('./assets/applications/assets/models/statue/scene.gltf');
+        const gltf = await loadGLTF('./assets/applications/assets/models/hommechapeaumelon/MA_AVERAGE_MAN_EXPORT.gltf');
         gltf.scene.scale.set(0.2, 0.2, 0.2);
        // gltf.scene.scale.set(0.4, 0.4, 0.4);
         gltf.scene.position.set(0, 0, 0);
