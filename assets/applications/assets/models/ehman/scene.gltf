@@ -75,7 +75,7 @@
     "buffers": [
         {
             "byteLength": 1153296,
-            "uri": "Sans titre_binary.bin"
+            "uri": "scene_binary.bin"
         }
     ],
     "cameras": [
@@ -93,7 +93,7 @@
     "images": [
         {
             "name": "AVERAGE_MAN_BAKE_4K",
-            "uri": "Sans titre_images\\AVERAGE_MAN_BAKE_4K.jpg",
+            "uri": "scene_images\\AVERAGE_MAN_BAKE_4K.jpg",
             "mimeType": "image/jpeg"
         }
     ],
