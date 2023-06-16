@@ -16,25 +16,14 @@ document.addEventListener('DOMContentLoaded', () => {
         gltf.scene.scale.set(0.8, 0.8, 0.8);
         gltf.scene.position.set(0, 0, 0);
 
-        gltf.scene.scale.set(0.1, 0.1, 0.1);
-        gltf.scene.position.set(0, -0.4, 0);
-
         const anchor = mindarThree.addAnchor(0);
         anchor.group.add(gltf.scene);
 
-        anchor.onTargetFound = () => {
-        console.log("on target found");
-        }
-        anchor.onTargetLost = () => {
-        console.log("on target lost");
-        }
+        const clock = new THREE.Clock();
 
-        await mindarThree.start();
-        renderer.setAnimationLoop(() => {
-        renderer.render(scene, camera);
-    });
-  }
-  start();
+        await mindarThree.start(); renderer.setAnimationLoop(() => {
+            renderer.render(scene, camera);
+          });
+        }
+    start();
 });
-
-
