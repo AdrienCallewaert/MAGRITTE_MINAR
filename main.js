@@ -16,11 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
         gltf.scene.scale.set(0.8, 0.8, 0.8);
         gltf.scene.position.set(0, 0, 0);
 
-        raccoon.scene.scale.set(0.1, 0.1, 0.1);
-        raccoon.scene.position.set(0, -0.4, 0);
+        gltf.scene.scale.set(0.1, 0.1, 0.1);
+        gltf.scene.position.set(0, -0.4, 0);
 
         const anchor = mindarThree.addAnchor(0);
-        anchor.group.add(raccoon.scene);
+        anchor.group.add(gltf.scene);
 
         anchor.onTargetFound = () => {
         console.log("on target found");
@@ -36,5 +36,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   start();
 });
+
+
+
+
 
 
