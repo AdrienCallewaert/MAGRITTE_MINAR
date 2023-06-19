@@ -1,5 +1,12 @@
+//info for magritte
 import { loadGLTF } from "./assets/applications/libs/loader.js";
 const THREE = window.MINDAR.IMAGE.THREE;
+
+//info for video émulator
+//import { mockWithVideo, mockWithImage } from './assets/applications/libs/camera-mock.js';
+//const THREE = window.MINDAR.IMAGE.THREE;
+
+//mockWithVideo("./assets/applications/assets/mock-videos/ar_magritte.mp4");
 
 document.addEventListener('DOMContentLoaded', () => {
     const start = async() => {
@@ -14,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const gltf = await loadGLTF('./assets/applications/assets/models/ehman/GLTF/scene.gltf');
         gltf.scene.scale.set(0.8, 0.8, 0.8);
-        gltf.scene.position.set(0, 0, 0);
+        gltf.scene.position.set(5, 0, 0);
 
         const anchor = mindarThree.addAnchor(0);
         anchor.group.add(gltf.scene);

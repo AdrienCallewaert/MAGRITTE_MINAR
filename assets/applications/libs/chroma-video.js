@@ -1,4 +1,4 @@
-import * as THREE from "./three.js-r132/build/three.module.js";
+import * as THREE from "./assets/applications/libs/three.js-r132/build/three.module.js";
 
 export const createChromaMaterial = (texture, keyColor) => {
   const keyColorObject = new THREE.Color(keyColor);
