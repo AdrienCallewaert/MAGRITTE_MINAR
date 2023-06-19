@@ -16,6 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
         gltf.scene.scale.set(0.8, 0.8, 0.8);
         gltf.scene.position.set(0, 0, 0);
 
+        const anchor = mindarThree.addAnchor(0);
+        anchor.group.add(gltf.scene);
+
         const mixer = new THREE.AnimationMixer(gltf.scene);
         const action = mixer.clipAction(gltf.animations[0]);
         action.play();
