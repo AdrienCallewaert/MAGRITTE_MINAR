@@ -1,5 +1,5 @@
 # AR MAGRITTE 
-Framework CSS "réalité augmentée", MindAR! 
+APP AR "réalité augmentée", MindAR! > MAGRITTE
 
 - Projet Exhibition HUB / Magritte par **Adrien Callewaert**
 - Année: **2023**
