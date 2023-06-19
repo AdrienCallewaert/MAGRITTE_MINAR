@@ -1,5 +1,14 @@
+//info for magritte
 import { loadGLTF } from "./assets/applications/libs/loader.js";
 const THREE = window.MINDAR.IMAGE.THREE;
+
+//info for video émulator
+//import { mockWithVideo, mockWithImage } from "./assets/applications/libs/camera-mock.js";
+//const THREE = window.MINDAR.IMAGE.THREE;
+
+//-----------------------------------------------------------------------------------------
+
+//mockWithVideo("./assets/applications/assets/mock-videos/ar_magritte.mp4");
 
 document.addEventListener('DOMContentLoaded', () => {
     const start = async() => {
@@ -15,6 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const gltf = await loadGLTF('./assets/applications/assets/models/ehman/GLTF/scene.gltf');
         gltf.scene.scale.set(0.8, 0.8, 0.8);
         gltf.scene.position.set(0, 0, 0);
+        //gltf.scene.position.set(0, -1, 0); descend
+        //gltf.scene.position.set(-1, 0, 0); avance
 
         const anchor = mindarThree.addAnchor(0);
         anchor.group.add(gltf.scene);
@@ -28,11 +39,17 @@ document.addEventListener('DOMContentLoaded', () => {
         await mindarThree.start();
         renderer.setAnimationLoop(() => {
           const delta = clock.getDelta();
-          gltf.scene.rotation.set(0, gltf.scene.rotation.y+delta, 0);
+          // Dev Pack
+          //gltf.scene.rotation.set(0, gltf.scene.rotation.y+delta, 0);
           mixer.update(delta);
           renderer.render(scene, camera);
         });
       }
       start();
     });
+    
+
+
+
+
     
