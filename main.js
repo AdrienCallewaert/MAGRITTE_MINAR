@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
         renderer.setAnimationLoop(() => {
           const delta = clock.getDelta();
           // Dev Pack
-          gltf.scene.rotation.set(0, -5, 0);
+          gltf.scene.rotation.set(15, 0, 0);
           mixer.update(delta);
           renderer.render(scene, camera);
         });
