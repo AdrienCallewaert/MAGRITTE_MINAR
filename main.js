@@ -23,7 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const gltf = await loadGLTF("./assets/applications/assets/models/ehman/GLTF/scene.gltf");
         gltf.scene.scale.set(0.8, 0.8, 0.8);
-        gltf.scene.position.set(-1, 0, 0);
+        gltf.scene.position.set(0, -1, 0);
+        //gltf.scene.position.set(-1, 0, 0); avance
 
         const anchor = mindarThree.addAnchor(0);
         anchor.group.add(gltf.scene);
