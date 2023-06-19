@@ -21,9 +21,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const light = new THREE.HemisphereLight(0xffffff, 0xbbbbff, 1);
         scene.add(light);
 
-        const gltf = await loadGLTF("./assets/applications/assets/models/ehman/GLTF/scene.gltf");
+        const gltf = await loadGLTF("./assets/applications/assets/models/ehman/GLTF2/scene.gltf");
         gltf.scene.scale.set(0.8, 0.8, 0.8);
-        gltf.scene.position.set(0, 0, 5);
+        gltf.scene.position.set(0, 0, 0);
         //gltf.scene.position.set(0, -1, 0); descend
         //gltf.scene.position.set(-1, 0, 0); avance
 
