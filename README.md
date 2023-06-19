@@ -9,7 +9,7 @@ APP AR "réalité augmentée", MindAR! > MAGRITTE
 
 ## La mission 
 
-Création d'une carte en AR pour Exhibition Hub [AR MAGRITTE](https://adriencallewaert.github.io/MAGRITTE_MINAR/). 
+Création d'une invitation VIP en AR pour Exhibition Hub [AR MAGRITTE](https://adriencallewaert.github.io/MAGRITTE_MINAR/). 
 
 
 ## Etape 
